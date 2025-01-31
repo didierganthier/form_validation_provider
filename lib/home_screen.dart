@@ -57,7 +57,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     obscureText: true,
                     onChanged: (value) => formProvider.updatePassword(value),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 20,
                   ),
                   if (formProvider.state == FormStateEnum.submitting)

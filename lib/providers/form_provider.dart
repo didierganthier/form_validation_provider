@@ -37,12 +37,12 @@ class FormProvider extends ChangeNotifier {
   }
 
   void updateEmail(String value) {
-    _email = email;
+    _email = value;
     notifyListeners();
   }
 
   void updatePassword(String value) {
-    _password = password;
+    _password = value;
     notifyListeners();
   }
 
@@ -96,7 +96,7 @@ class FormProvider extends ChangeNotifier {
     notifyListeners();
 
     await Future.delayed(
-      Duration(
+      const Duration(
         seconds: 3,
       ),
     );
